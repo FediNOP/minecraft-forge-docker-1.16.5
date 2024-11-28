@@ -7,7 +7,6 @@ services:
     ports:
       - "25565:25565"
     volumes:
-      # attach the relative directory 'data' to the container's /data path
       - /minecraftServer:/data
     environment:
       EULA: "TRUE"
@@ -24,7 +23,6 @@ services:
     ports:
       - "9090:9090"
     volumes:
-      # The path on your local computer where the prometheus configuration exists mapped to /etc/prometheus/prometheus.yml within the prometheus container
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
     restart: on-failure:3
   
@@ -34,6 +32,5 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      # The path on your local computer where the grafana data will be written to mapped to /var/lib/grafana inside the grafana container
       - ./grafana:/var/lib/grafana
     restart: on-failure:3
