@@ -12,4 +12,4 @@ services:
       EULA: "TRUE"
       TYPE: FORGE
       VERSION: "1.16.5"
-      FORGE_VERSION: "136.2.42"
+      FORGE_VERSION: "36.2.42"
