@@ -6,6 +6,7 @@ services:
     stdin_open: true
     ports:
       - "25565:25565"
+      - "19565:19565"
     volumes:
       - /minecraftServer:/data
     environment:
