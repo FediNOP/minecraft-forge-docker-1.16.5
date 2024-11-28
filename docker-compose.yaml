@@ -7,7 +7,7 @@ services:
       - "25566:25565"
     volumes:
       # attach the relative directory 'data' to the container's /data path
-      - /minecraftServer/
+      - /minecraftServer:data
     environment:
       EULA: "TRUE"
       TYPE: FORGE
