@@ -1,6 +1,6 @@
 services:
   mc:
-    image: itzg/minecraft-server:java11
+    image: itzg/minecraft-server:2024.10.2-java8-jdk
     tty: true
     stdin_open: true
     ports:
