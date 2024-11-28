@@ -6,6 +6,6 @@ scrape_configs:
   # scrape minecraft server
 - job_name: 'minecraft'
   static_configs:
-    - targets: ['localhost:19565']
+    - targets: ['188.120.229.122:19565']
       labels:
         server_name: 'minecraft-docker'
