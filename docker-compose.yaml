@@ -32,4 +32,6 @@ services:
     stdin_open: true
     ports:
       - "3000:3000"
+    volumes:
+      - grafana-storage:/var/lib/grafana
     restart: on-failure:3
