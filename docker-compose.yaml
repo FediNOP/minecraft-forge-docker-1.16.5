@@ -35,6 +35,8 @@ services:
     volumes:
       - grafana-storage:/var/lib/grafana
     restart: on-failure:3
+    environment:
+      GF_SERVER_ROOT_URL: http://188.120.229.122:3000/
     
 volumes:
   grafana-storage: {}
