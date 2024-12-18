@@ -7,6 +7,7 @@ services:
     ports:
       - "25565:25565"
       - "19565:19565"
+      - "25575:25575"
     volumes:
       - /minecraftServer:/data
     environment:
